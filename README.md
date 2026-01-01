@@ -88,15 +88,25 @@ Complaint history stored and retrievable via database
 
 📦 Complaint-Resolution-AI
  ┣ 📂 models
+ 
  ┃ ┣ lstm_model.h5
+ 
  ┃ ┣ tokenizer.pkl
+ 
  ┃ ┗ label_encoder.pkl
+ 
  ┣ 📂 templates
+ 
  ┃ ┗ index.html
+ 
  ┣ 📂 static
+ 
  ┃ ┗ style.css
+ 
  ┣ app.py
+ 
  ┣ complaints.db
+ 
  ┗ README.md
 
 ### Tech Stack : 
