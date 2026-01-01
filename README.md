@@ -87,6 +87,7 @@ AI-generated resolution
 Complaint history stored and retrievable via database
 
 📦 Complaint-Resolution-AI
+
  ┣ 📂 models
  
  ┃ ┣ lstm_model.h5
