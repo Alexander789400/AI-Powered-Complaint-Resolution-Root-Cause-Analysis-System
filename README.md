@@ -117,6 +117,7 @@ Database: SQLite
 Frontend: HTML, CSS
 
 Industry Use Case
+
 <img width="1920" height="1080" alt="Screenshot 2025-12-30 100418" src="https://github.com/user-attachments/assets/698a1bf4-6164-43c2-bfec-7d09f433bc5c" />
 
 
@@ -147,4 +148,4 @@ Make data-driven decisions
 Alexander Roy
 AI & Data Science Enthusiast
 
-[LinkedIn](www.linkedin.com/in/alexander-roy-570456191)
+[LinkedIn](https://www.linkedin.com/in/alexander-roy-570456191/)
