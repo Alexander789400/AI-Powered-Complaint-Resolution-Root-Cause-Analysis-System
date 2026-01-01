@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Complaint Resolution System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+
+    <header>
+        <h1>AI Complaint Resolution System</h1>
+        <p>Transformer + LSTM powered intelligent complaint analysis</p>
+    </header>
+
+    <form method="POST" class="complaint-form">
+        <textarea name="complaint" placeholder="Paste customer complaint here..." required></textarea>
+        <button type="submit">Analyze Complaint</button>
+    </form>
+
+    {% if result %}
+    <div class="result-card">
+        <h2>Analysis Result</h2>
+
+        <div class="grid">
+            <div class="box">
+                <span>Transformer Category</span>
+                <p>{{ result["Transformer Category"] }}</p>
+            </div>
+
+            <div class="box">
+                <span>LSTM Category</span>
+                <p>{{ result["LSTM Category"] }}</p>
+            </div>
+
+            <!--  CONFIDENCE BOX -->
+            <div class="box">
+                <span>Confidence</span>
+                <p>{{ result["Confidence"] }}</p>
+            </div>
+
+            <div class="box">
+                <span>Sentiment</span>
+                <p class="negative">{{ result["Sentiment"] }}</p>
+            </div>
+
+            <div class="box">
+                <span>Priority</span>
+                <p class="high">{{ result["Priority"] }}</p>
+            </div>
+
+            <div class="box">
+                <span>Root Cause</span>
+                <p>{{ result["Root Cause"] }}</p>
+            </div>
+        </div>
+
+        <div class="reply">
+            <h3>Automated Reply</h3>
+            <p>{{ result["Automated Reply"] }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
