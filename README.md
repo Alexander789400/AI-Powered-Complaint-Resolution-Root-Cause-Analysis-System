@@ -97,7 +97,6 @@ Complaint history stored and retrievable via database
  ┃ ┗ style.css
  ┣ app.py
  ┣ complaints.db
- ┣ requirements.txt
  ┗ README.md
 
 ### Tech Stack : 
